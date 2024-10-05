@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev:bot": "npx ts-node bot.ts",
+    "dev:nuxt": "npm run dev --prefix ./nuxt-bot-app",
+    "dev:all": "concurrently \"npm run dev:bot\" \"npm run dev:nuxt\""
   },
   "keywords": [],
   "author": "",
